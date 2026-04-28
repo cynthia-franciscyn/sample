@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Reviews Widget Examples</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
+        .widget-container { margin: 20px 0; padding: 20px; background: white; border-radius: 8px; }
+        .review-card { border: 1px solid #ddd; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .stars { color: #f39c12; }
+        .reviewer { font-weight: bold; margin-bottom: 5px; }
+        .review-date { color: #666; font-size: 0.9em; }
+        .review-text { margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Google Reviews Integration Options</h1>
+    
+    <div class="widget-container">
+        <h2>Option 1: Elfsight Google Reviews Widget</h2>
+        <p>Paste this code where you want reviews to appear:</p>
+        <pre><code>&lt;script src="https://apps.elfsight.com/p/platform.js" defer&gt;&lt;/script&gt;
+&lt;div class="elfsight-app-YOUR_APP_ID"&gt;&lt;/div&gt;</code></pre>
+        <p>Steps:</p>
+        <ol>
+            <li>Go to <a href="https://apps.elfsight.com/google-reviews-widget/" target="_blank">Elfsight Google Reviews</a></li>
+            <li>Create a free account</li>
+            <li>Connect your Google My Business account</li>
+            <li>Customize the widget appearance</li>
+            <li>Get the embed code and replace YOUR_APP_ID</li>
+        </ol>
+    </div>
+
+    <div class="widget-container">
+        <h2>Option 2: Embed Google Maps with Reviews</h2>
+        <p>Embed your Google Maps location which shows reviews:</p>
+        <pre><code>&lt;iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.495992061248!3d12.998104414822324!2d77.55717941482237!3d12.998104414822324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e6a5a9a4b5b%3A0x1a1a1a1a1a1a1a1a!2s197%2C%20Balaji%20Layout%2C%20Byadarahalli%2C%20Bengaluru%2C%20Karnataka%20560091!5e0!3m2!1sen!2sin!4v1641234567890" 
+width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"&gt;&lt;/iframe&gt;</code></pre>
+    </div>
+
+    <div class="widget-container">
+        <h2>Option 3: Manual Google Reviews Section</h2>
+        <p>Create a custom reviews section (you'll need to update this manually):</p>
+        <div class="review-card">
+            <div class="reviewer">John Doe</div>
+            <div class="stars">★★★★★</div>
+            <div class="review-date">2 days ago</div>
+            <div class="review-text">Excellent detailing service! My car looks brand new.</div>
+        </div>
+        <div class="review-card">
+            <div class="reviewer">Jane Smith</div>
+            <div class="stars">★★★★★</div>
+            <div class="review-date">1 week ago</div>
+            <div class="review-text">Professional team and amazing results. Highly recommend!</div>
+        </div>
+    </div>
+
+    <div class="widget-container">
+        <h2>Option 4: Google My Business API (Advanced)</h2>
+        <p>For automatic updates, you can use the Google My Business API:</p>
+        <ol>
+            <li>Get Google My Business API access</li>
+            <li>Create server-side code to fetch reviews</li>
+            <li>Display reviews on your website</li>
+            <li>Requires developer knowledge and API quotas</li>
+        </ol>
+    </div>
+</body>
+</html>
